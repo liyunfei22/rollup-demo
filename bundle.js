@@ -1,9 +1,14 @@
 'use strict';
 
-var version = "1.0.0";
+require('lodash');
 
-function main() {
-  console.log('version' + version);
-}
+var index = 42;
+
+//   console.log('version' + version)
+// }
+
+var main = (function () {
+  console.log("the answer is ".concat(index));
+});
 
 module.exports = main;
