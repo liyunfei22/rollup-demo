@@ -9,11 +9,12 @@ export default {
     file: 'bundle.js',
     format: 'cjs'
   },
-  plugins: [resolve({
+  plugins: [
+    resolve({
     customResolveOptions: {
-      moduleDirectory: 'node_modules'
-    }
-  }), 
+        moduleDirectory: 'node_modules'
+      }
+    }), 
   commonjs(),
   babel({
     babelHelpers: 'bundled',
