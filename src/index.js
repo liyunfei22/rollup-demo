@@ -1,26 +1,13 @@
 import demo from './lib/demo';
-import $ from 'jquery';
-import pkg from './../package.json';
-import './css/index.scss';
+import showPackage from './lib/package';
+import common from './lib/commonjs';
 
-
-const pkgText = JSON.stringify(pkg);
 const arr1 = [1,2,3];
 const arr2 = [4,5,6];
 console.log([...arr1, ...arr2]);
-
+console.log(common.add(1,2));
 export async function initDemo () {
   let data = await demo();
   console.log(data);
+  showPackage();
 }
-
-const text = 'this is append dom';
-const dom = `
-<p>${text}</p>
-<code>${pkgText}</code>
-`;
-
-$('body').append(dom);
-
-console.log('render end!')
-initDemo();

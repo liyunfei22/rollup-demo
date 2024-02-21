@@ -4,9 +4,7 @@
   "description": "",
   "main": "bundle.js",
   "scripts": {
-    "dev": "rollup -w -c ./build/rollup.config.dev.js",
-    "build": "rollup -c ./build/rollup.config.prod.js",
-    "v": "rollup -v"
+    "build": "rollup -c -w"
   },
   "keywords": [],
   "author": "",
