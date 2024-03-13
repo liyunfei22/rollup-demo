@@ -1,16 +1,5 @@
-import demo from './lib/demo';
-import showPackage from './lib/package';
-import common from './lib/commonjs';
-import {name} from 'module-a';
-// import('./msg').then(res => {
-//   console.log(res);
-// }) 
+import msg from './msg';
+import add from './add';
 
-console.log(common.add(1,2));
-export async function initDemo () {
-  console.log(name);
-  let data = await demo();
-  console.log(data);
-  showPackage();
-}
-initDemo();
+console.log(msg);
+console.log(add(1, 2));
